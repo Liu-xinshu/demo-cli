@@ -12,6 +12,7 @@ import api from "./api";
 import Mixin from "./utils/mixin";
 import "./utils/flexible";
 import "./assets/css/index.scss";
+import Container from "./components/Container/index";
 window.$api = api;
 window.$bus =  new Vue();
 window.$getters = store.getters;
@@ -27,6 +28,7 @@ highcharts3d(Highchart);
 Vue.use(ElementUI);
 Vue.use(HighchartsVue);
 Vue.use(Mixin);
+Vue.use(Container);
 Vue.config.productionTip = false;
 Vue.prototype.$echarts = echarts;
 Vue.directive("drag", {
