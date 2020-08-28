@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const newAxios = axios.create({
-	baseURL:ENV.BASE_API,
+	baseURL:BASE_API,
 	// timeout: 3000
 })
 
